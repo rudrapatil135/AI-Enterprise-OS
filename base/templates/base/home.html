@@ -1,0 +1,860 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Enterprise OS | Intelligent Business Automation</title>
+
+    <meta name="description"
+          content="AI Enterprise OS is a multi-agent AI platform that automates email, projects, documents, scheduling and HR operations.">
+
+    <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="/" class="logo">
+            <div class="logo-icon">AI</div>
+            <span>Enterprise<span class="logo-highlight">OS</span></span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#agents">AI Agents</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="/login/" class="login-btn">Login</a>
+            <a href="/signup/" class="primary-btn nav-cta">Get Started</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+    </div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                <span class="status-dot"></span>
+                Powered by Multi-Agent AI
+            </div>
+
+            <h1>
+                Your Enterprise,
+                <span class="gradient-text">Powered by AI.</span>
+            </h1>
+
+            <p class="hero-description">
+                AI Enterprise OS brings intelligent agents together to
+                automate your emails, projects, documents, meetings,
+                and employee operations from one unified platform.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="/signup/" class="primary-btn large-btn">
+                    Get Started Free
+                    <span>→</span>
+                </a>
+
+                <a href="#how-it-works" class="secondary-btn large-btn">
+                    See How It Works
+                </a>
+            </div>
+
+            <div class="hero-trust">
+                <span>✓ Intelligent automation</span>
+                <span>✓ Multi-agent architecture</span>
+                <span>✓ Enterprise ready</span>
+            </div>
+
+        </div>
+
+
+        <!-- AI SYSTEM VISUAL -->
+
+        <div class="hero-visual">
+
+            <div class="dashboard-window">
+
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="window-title">
+                        AI Enterprise OS
+                    </span>
+
+                    <span class="live-indicator">
+                        ● LIVE
+                    </span>
+                </div>
+
+                <div class="ai-dashboard">
+
+                    <div class="dashboard-top">
+                        <div>
+                            <span class="small-label">SYSTEM STATUS</span>
+                            <h3>All Agents Operational</h3>
+                        </div>
+
+                        <div class="system-status">
+                            <span></span>
+                            Online
+                        </div>
+                    </div>
+
+                    <div class="agent-grid">
+
+                        <div class="mini-agent">
+                            <div class="agent-icon email-icon">✉</div>
+                            <div>
+                                <strong>Email Agent</strong>
+                                <small>Processing emails</small>
+                            </div>
+                            <span class="agent-online"></span>
+                        </div>
+
+                        <div class="mini-agent">
+                            <div class="agent-icon project-icon">✓</div>
+                            <div>
+                                <strong>Project Agent</strong>
+                                <small>Tracking sprint</small>
+                            </div>
+                            <span class="agent-online"></span>
+                        </div>
+
+                        <div class="mini-agent">
+                            <div class="agent-icon document-icon">▤</div>
+                            <div>
+                                <strong>Document Agent</strong>
+                                <small>Searching files</small>
+                            </div>
+                            <span class="agent-online"></span>
+                        </div>
+
+                        <div class="mini-agent">
+                            <div class="agent-icon calendar-icon">◫</div>
+                            <div>
+                                <strong>Scheduling Agent</strong>
+                                <small>Managing calendar</small>
+                            </div>
+                            <span class="agent-online"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-panel">
+
+                        <div class="activity-title">
+                            <span>Recent AI Activity</span>
+                            <span class="view-all">View all</span>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-symbol">✉</div>
+                            <div>
+                                <strong>Email summarized</strong>
+                                <small>Marketing Team · 2 min ago</small>
+                            </div>
+                            <span class="activity-check">✓</span>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-symbol">✓</div>
+                            <div>
+                                <strong>Jira ticket updated</strong>
+                                <small>AI-124 · 5 min ago</small>
+                            </div>
+                            <span class="activity-check">✓</span>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-symbol">◫</div>
+                            <div>
+                                <strong>Meeting scheduled</strong>
+                                <small>Product Review · 12 min ago</small>
+                            </div>
+                            <span class="activity-check">✓</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="stats-section">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+            <h3>5+</h3>
+            <p>Specialized AI Agents</p>
+        </div>
+
+        <div class="stat">
+            <h3>24/7</h3>
+            <p>Intelligent Automation</p>
+        </div>
+
+        <div class="stat">
+            <h3>1</h3>
+            <p>Unified Enterprise Platform</p>
+        </div>
+
+        <div class="stat">
+            <h3>∞</h3>
+            <p>Business Possibilities</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURES INTRO
+===================================================== -->
+
+<section class="section" id="features">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">ONE PLATFORM</span>
+
+            <h2>
+                Everything your business needs,
+                <span class="gradient-text">automated.</span>
+            </h2>
+
+            <p>
+                Connect your existing business tools and let specialized
+                AI agents handle repetitive operational work.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <!-- EMAIL -->
+
+            <article class="feature-card">
+
+                <div class="feature-icon email-feature">✉</div>
+
+                <span class="feature-number">01</span>
+
+                <h3>Email Agent</h3>
+
+                <p>
+                    Let AI read, summarize, prioritize, draft and
+                    send emails while automatically identifying urgent
+                    messages.
+                </p>
+
+                <div class="feature-flow">
+                    <span>Gmail</span>
+                    <span>→</span>
+                    <span>AI</span>
+                    <span>→</span>
+                    <span>Action</span>
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT -->
+
+            <article class="feature-card">
+
+                <div class="feature-icon project-feature">✓</div>
+
+                <span class="feature-number">02</span>
+
+                <h3>Project Management Agent</h3>
+
+                <p>
+                    Connect Jira and allow AI to create and update
+                    tickets, monitor sprints and generate project
+                    progress reports.
+                </p>
+
+                <div class="feature-flow">
+                    <span>Jira</span>
+                    <span>→</span>
+                    <span>AI</span>
+                    <span>→</span>
+                    <span>Reports</span>
+                </div>
+
+            </article>
+
+
+            <!-- DOCUMENT -->
+
+            <article class="feature-card">
+
+                <div class="feature-icon document-feature">▤</div>
+
+                <span class="feature-number">03</span>
+
+                <h3>Document Agent</h3>
+
+                <p>
+                    Search your enterprise documents, summarize reports,
+                    extract information and generate new documents
+                    using natural language.
+                </p>
+
+                <div class="feature-flow">
+                    <span>Drive</span>
+                    <span>→</span>
+                    <span>AI</span>
+                    <span>→</span>
+                    <span>Docs</span>
+                </div>
+
+            </article>
+
+
+            <!-- SCHEDULING -->
+
+            <article class="feature-card">
+
+                <div class="feature-icon calendar-feature">◫</div>
+
+                <span class="feature-number">04</span>
+
+                <h3>Scheduling Agent</h3>
+
+                <p>
+                    Check calendar availability, schedule meetings,
+                    reschedule events and automatically send reminders.
+                </p>
+
+                <div class="feature-flow">
+                    <span>Calendar</span>
+                    <span>→</span>
+                    <span>AI</span>
+                    <span>→</span>
+                    <span>Meeting</span>
+                </div>
+
+            </article>
+
+
+            <!-- HR -->
+
+            <article class="feature-card">
+
+                <div class="feature-icon hr-feature">♙</div>
+
+                <span class="feature-number">05</span>
+
+                <h3>HR & Employee Agent</h3>
+
+                <p>
+                    Answer employee questions about company policies,
+                    leave, onboarding and frequently requested HR
+                    information.
+                </p>
+
+                <div class="feature-flow">
+                    <span>Employee</span>
+                    <span>→</span>
+                    <span>AI</span>
+                    <span>→</span>
+                    <span>Answer</span>
+                </div>
+
+            </article>
+
+
+            <!-- CUSTOM -->
+
+            <article class="feature-card feature-card-special">
+
+                <div class="special-content">
+
+                    <span class="section-tag">MORE TO COME</span>
+
+                    <h3>
+                        Built to grow with
+                        your enterprise.
+                    </h3>
+
+                    <p>
+                        Add new specialized agents and integrations
+                        as your business evolves.
+                    </p>
+
+                    <a href="#how-it-works" class="text-link">
+                        Explore the architecture →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AI AGENTS SECTION
+===================================================== -->
+
+<section class="agents-section" id="agents">
+
+    <div class="container">
+
+        <div class="section-heading center-heading">
+
+            <span class="section-tag">MULTI-AGENT INTELLIGENCE</span>
+
+            <h2>
+                Specialized agents.
+                <span class="gradient-text">One intelligent system.</span>
+            </h2>
+
+            <p>
+                Each agent specializes in a specific business domain,
+                while the central AI orchestration layer coordinates
+                tasks across the entire enterprise.
+            </p>
+
+        </div>
+
+
+        <div class="architecture">
+
+            <div class="architecture-user">
+                <div class="architecture-circle">👤</div>
+                <span>User</span>
+            </div>
+
+            <div class="architecture-line"></div>
+
+            <div class="supervisor">
+
+                <div class="supervisor-icon">✦</div>
+
+                <h3>AI Supervisor</h3>
+
+                <p>
+                    Understands requests and routes tasks
+                    to the right specialized agent.
+                </p>
+
+            </div>
+
+            <div class="architecture-line"></div>
+
+            <div class="architecture-agents">
+
+                <div class="architecture-agent">
+                    <span>✉</span>
+                    <strong>Email</strong>
+                    <small>Gmail</small>
+                </div>
+
+                <div class="architecture-agent">
+                    <span>✓</span>
+                    <strong>Projects</strong>
+                    <small>Jira</small>
+                </div>
+
+                <div class="architecture-agent">
+                    <span>▤</span>
+                    <strong>Documents</strong>
+                    <small>Google Drive</small>
+                </div>
+
+                <div class="architecture-agent">
+                    <span>◫</span>
+                    <strong>Scheduling</strong>
+                    <small>Calendar</small>
+                </div>
+
+                <div class="architecture-agent">
+                    <span>♙</span>
+                    <strong>HR</strong>
+                    <small>Policies</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HOW IT WORKS
+===================================================== -->
+
+<section class="section" id="how-it-works">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">HOW IT WORKS</span>
+
+            <h2>
+                From request to
+                <span class="gradient-text">action.</span>
+            </h2>
+
+            <p>
+                AI Enterprise OS transforms natural-language requests
+                into real business actions.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <div class="step-content">
+                    <h3>You Ask</h3>
+                    <p>
+                        Give the system a request using natural language.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <div class="step-content">
+                    <h3>AI Understands</h3>
+                    <p>
+                        The AI analyzes your request, context and intent.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <div class="step-content">
+                    <h3>Agent Executes</h3>
+                    <p>
+                        The appropriate specialized agent performs
+                        the required task using connected enterprise tools.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">04</div>
+
+                <div class="step-content">
+                    <h3>You Get Results</h3>
+                    <p>
+                        Receive the result, confirmation or generated
+                        report in one unified workspace.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
+
+<section class="benefits-section" id="about">
+
+    <div class="container benefits-container">
+
+        <div class="benefits-content">
+
+            <span class="section-tag">WHY AI ENTERPRISE OS?</span>
+
+            <h2>
+                Stop managing tools.
+                <span class="gradient-text">
+                    Start managing outcomes.
+                </span>
+            </h2>
+
+            <p>
+                Modern enterprises rely on dozens of disconnected
+                applications. AI Enterprise OS creates an intelligent
+                layer across those systems so employees can focus on
+                meaningful work instead of repetitive operations.
+            </p>
+
+            <div class="benefit-list">
+
+                <div class="benefit">
+                    <span>✓</span>
+                    <div>
+                        <strong>Reduce repetitive work</strong>
+                        <p>Automate routine business operations.</p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <span>✓</span>
+                    <div>
+                        <strong>Work from one interface</strong>
+                        <p>Interact with multiple enterprise systems through AI.</p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <span>✓</span>
+                    <div>
+                        <strong>Make faster decisions</strong>
+                        <p>Turn business data into actionable insights.</p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <span>✓</span>
+                    <div>
+                        <strong>Scale intelligently</strong>
+                        <p>Add agents and integrations as your organization grows.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="benefits-visual">
+
+            <div class="floating-card card-one">
+                <span class="floating-icon">✉</span>
+                <div>
+                    <strong>12 Emails</strong>
+                    <small>Processed automatically</small>
+                </div>
+            </div>
+
+            <div class="floating-card card-two">
+                <span class="floating-icon">✓</span>
+                <div>
+                    <strong>8 Tasks</strong>
+                    <small>Updated in Jira</small>
+                </div>
+            </div>
+
+            <div class="floating-card card-three">
+                <span class="floating-icon">◫</span>
+                <div>
+                    <strong>3 Meetings</strong>
+                    <small>Scheduled by AI</small>
+                </div>
+            </div>
+
+            <div class="central-ai">
+                <div class="central-ai-icon">✦</div>
+                <strong>AI OS</strong>
+                <span>Working for you</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-glow"></div>
+
+            <span class="section-tag">THE FUTURE OF WORK</span>
+
+            <h2>
+                Give your business
+                <span class="gradient-text">an AI workforce.</span>
+            </h2>
+
+            <p>
+                Bring your enterprise tools, data and workflows
+                together with intelligent AI agents.
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="/signup/" class="primary-btn large-btn">
+                    Get Started Free
+                    <span>→</span>
+                </a>
+
+                <a href="#features" class="secondary-btn large-btn">
+                    Explore Features
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="/" class="logo">
+                    <div class="logo-icon">AI</div>
+                    <span>Enterprise<span class="logo-highlight">OS</span></span>
+                </a>
+
+                <p>
+                    An intelligent multi-agent operating system
+                    for modern enterprises.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Platform</h4>
+                    <a href="#features">Features</a>
+                    <a href="#agents">AI Agents</a>
+                    <a href="#how-it-works">How It Works</a>
+                </div>
+
+                <div>
+                    <h4>Company</h4>
+                    <a href="#about">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Documentation</a>
+                </div>
+
+                <div>
+                    <h4>Account</h4>
+                    <a href="/login/">Login</a>
+                    <a href="/signup/">Get Started</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 AI Enterprise OS. All rights reserved.
+            </span>
+
+            <span>
+                Built with AI • Django • PostgreSQL
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="{% static 'base/js/main.js' %}"></script>
+
+</body>
+</html>
+```
